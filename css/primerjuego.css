@@ -29,6 +29,7 @@ h2 {
 }
 h3 {
   color: #ac000d;
+  text-align: center;
 }
 
 h4 {
@@ -102,7 +103,7 @@ p {
 .mario {
   float: left;
   height: 200px;
-  margin-right: 10px;
+  margin-right: 8px;
   align-items: center;
   border-radius: 5px;
 }
@@ -120,4 +121,14 @@ p {
   background-color: #fbd000;
   color: rgb(230, 0, 18);
   font-weight: 600;
+}
+
+footer {
+  align-items: center;
+  background-color: rgb(233, 107, 174);
+  border-radius: 6px;
+  color: aliceblue;
+  display: flex;
+  height: 4rem;
+  justify-content: center;
 }
