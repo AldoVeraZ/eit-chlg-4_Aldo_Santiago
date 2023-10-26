@@ -3,3 +3,21 @@
   src: url("./font/SuperMario256.ttf");
   /* font-weight: 300; */
 }
+
+@font-face {
+  font-family: "Mortal Kombat style5";
+  src: url("./font/mk5style.ttf");
+  /* font-weight: 300; */
+}
+
+@font-face {
+  font-family: "Mortal Kombat style4";
+  src: url("./font/MK4.TTF");
+  /* font-weight: 300; */
+}
+
+@font-face {
+  font-family: "Mortal Kombat main";
+  src: url("./font/mkda.ttf");
+  /* font-weight: 300; */
+}
