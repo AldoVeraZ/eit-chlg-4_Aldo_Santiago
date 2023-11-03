@@ -6,10 +6,6 @@
     <title>Mortal Kombat</title>
     <link rel="stylesheet" href="css/segundojuego.css" />
     <link rel="stylesheet" href="css/font.css" />
-    <script
-      src="https://kit.fontawesome.com/dbf8e0e4e7.js"
-      crossorigin="anonymous"
-    ></script>
   </head>
   <body>
     <header>
@@ -109,7 +105,58 @@
             <img src="img/spawn.jpeg" alt="" class="images" />
           </div>
         </div>
+        <div class="container-video">
+          <h4>
+            A continuación se puede ver una demostración del juego con uno de
+            los personajes extra más quedido de los 80;
+            <span class="robocop">ROBOCOP._</span>
+          </h4>
+          <!-- <div> -->
+          <iframe
+            src="https://www.youtube.com/embed/4t6QlBya6zc?si=KKbHap7L8FMxM-vl"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
+          <!-- </div> -->
+          <div class="buy">
+            <a class="button" href="#modal2">Confirmar compra</a>
+          </div>
+        </div>
       </section>
     </main>
+    <footer>
+      <h5>Desarrollado por misitio.com</h5>
+    </footer>
   </body>
 </html>
+
+<div id="modal2" class="modalmask">
+  <div class="modalbox rotate">
+    <a href="#close" title="Close" class="close">X</a>
+    <h2>MORTAL KOMBAT XI</h2>
+    <form onsubmit="alert('Usuario creado correctamente!')">
+      <label for="user">Nombre usuario</label>
+      <input type="text" id="user" name="user" required />
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" required />
+      <label for="pay">Pagar con</label>
+      <select name="pay" id="pay" required>
+        <option value="AR">WEB PAY</option>
+        <option value="CH">CREDITO</option>
+        <option value="CO">MASTERCARD</option>
+        <option value="EC" selected>VISA</option>
+        <option value="PY">MAGNA</option>
+        <option value="UY">PAYPAL</option>
+        <option value="VE">MERCADOPAGO</option>
+      </select>
+
+      <label for="ncuenta">Número de Cuenta</label>
+      <input id="ncuenta" name="ncuenta" id="ncuenta" required />
+      <label for="date">Fecha de Vencimiento</label>
+      <input type="date" id="date" name="date" required />
+      <button type="submit">COMPRAR JUEGO!!</button>
+    </form>
+  </div>
+</div>

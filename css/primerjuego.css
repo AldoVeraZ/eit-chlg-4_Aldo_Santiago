@@ -62,8 +62,8 @@ h4 {
   background-color: azure;
   align-items: center;
   margin: 1rem 0;
-  padding: 3px 7px;
-  padding-bottom: 80px;
+  padding: 3px 7px 1rem;
+  /* padding-bottom: 80px; */
   border-radius: 10px;
 }
 
@@ -97,7 +97,7 @@ p {
   margin-right: 20px;
 }
 .space {
-  padding-bottom: 15px;
+  padding-bottom: 50px;
 }
 
 .mario {
@@ -131,4 +131,189 @@ footer {
   display: flex;
   height: 4rem;
   justify-content: center;
+}
+
+.container-video {
+  display: flex;
+  flex-direction: column;
+  border: dotted 1px #f53929;
+  padding: 3px 7px;
+  height: 890px;
+}
+
+.yoshi {
+  color: #00ff2b;
+  margin-left: 5px;
+  font-size: xx-large;
+  font-family: "Super Mario 256";
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+iframe {
+  width: 100%;
+  height: 100vh;
+}
+
+.button {
+  background-color: rgb(230, 0, 18);
+  border-color: rgb(230, 0, 18);
+  padding: 10px;
+  border-radius: 5px;
+  color: beige;
+  text-decoration: none;
+}
+
+.button:hover {
+  background-color: #00ff2b;
+  color: rgb(230, 0, 18);
+  font-weight: 600;
+}
+.buy {
+  margin-top: 3rem;
+  text-align: center;
+}
+
+/*Efecto*/
+.modalmask {
+  position: fixed;
+  font-family: Arial, sans-serif;
+  top: 1;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: 99999;
+  opacity: 0;
+  -webkit-transition: opacity 400ms ease-in;
+  -moz-transition: opacity 400ms ease-in;
+  transition: opacity 400ms ease-in;
+  pointer-events: none;
+}
+.modalmask:target {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+/*Formato de la ventana*/
+.modalbox {
+  width: 400px;
+  position: relative;
+  padding: 5px 1px 10px 15px;
+  background: #fff;
+  border-radius: 3px;
+  -webkit-transition: all 500ms ease-in;
+  -moz-transition: all 500ms ease-in;
+  transition: all 500ms ease-in;
+}
+
+/*Movimientos  MODAL*/
+/* .movedown {
+  margin: 0 auto;
+} */
+.rotate {
+  margin: 10% auto;
+  -webkit-transform: scale(-5, -5);
+  transform: scale(-5, -5);
+}
+/* .resize {
+  margin: 10% auto;
+  width: 0;
+  height: 0;
+} */
+/* .modalmask:target .movedown {
+  margin: 10% auto;
+} */
+.modalmask:target .rotate {
+  transform: rotate(360deg) scale(1, 1);
+  -webkit-transform: rotate(360deg) scale(1, 1);
+}
+
+/* .modalmask:target .resize {
+  width: 400px;
+  height: 200px;
+} */
+
+/*Boton de cerrar*/
+.close {
+  background: #606061;
+  color: #ffffff;
+  line-height: 25px;
+  position: absolute;
+  right: 1px;
+  text-align: center;
+  top: 1px;
+  width: 24px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 3px;
+}
+
+.close:hover {
+  background: #faac58;
+  color: #222;
+}
+
+/* MODAL FORM */
+form {
+  /* margin: 2rem; */
+  width: 100%;
+  margin: 1rem;
+}
+
+form button {
+  background-color: rgb(230, 0, 18);
+  border: none;
+  border-radius: 1.5rem;
+  color: rgb(210, 194, 225);
+  padding: 0.5rem;
+  width: 80%;
+}
+
+form button:hover {
+  /* color: rgb(87, 7, 162);
+  background-color: rgb(210, 194, 225); */
+  background-color: #00ff2b;
+  color: rgb(230, 0, 18);
+  font-weight: 600;
+}
+
+input,
+textarea,
+select {
+  box-sizing: border-box;
+  border-radius: 1.5rem;
+  border: 1px solid black;
+  display: block;
+  font-family: sans-serif;
+  margin: 0.5rem 0;
+  padding: 0.25rem;
+  width: 80%;
+  resize: none;
+}
+
+input {
+  height: 1.5rem;
+}
+
+.input[type="checkbox"],
+input[type="radio"],
+fieldset {
+  width: 1.5rem;
+}
+
+fieldset {
+  width: 15rem;
+  padding: 0;
+}
+
+.field-gender {
+  display: flex;
+  align-items: center;
+}
+
+.mario-buy {
+  text-align: center;
+  font-family: "Super Mario 256";
+  color: #e52521;
+  border-bottom: dotted #0043ce;
 }
