@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    background-color: rgba(0, 0, 0, 0.383);
+}
+section {
+ 
+    background-image: url(../img/pngtree-bottom-console.jpg);
+    height: 100%;
+    margin: 0;
+    padding: 2rem;
+}
+
+.Content-principal {
+    padding: 1rem;
+    margin: 2rem;
+    background: none;
+}
+
+.primer-juego, .segundo-juego {
+    display: flex;
+    flex-direction: row-reverse;
+    background-color: rgba(0, 0, 0, 0.312);
+    box-shadow: 6px 6px 6px 9px rgba(255, 255, 255, 0.16);
+}
+.frist-section-1-game, .frist-section-2-game {
+    margin-left: 15px;
+}
+h1 {
+    font-family: 'Lobster', sans-serif;
+    font-size: 3.5rem;
+    margin: 0;
+}
+
+h3 {
+    font-family: 'Lobster', sans-serif;
+    font-size: 2rem;
+}
+h4 {
+    color: rgb(42, 198, 213);
+    text-align: center;
+    border-bottom: dotted;
+    font-family: 'Lobster', sans-serif;
+    font-size: 1.5rem;
+}
+
+
+
+img {
+    width: 35vw;
+    border-radius: 50%;
+}
+
+.link-compra {
+
+    padding-top: 2.5rem;
+    box-sizing: inherit;
+}
+
+a:hover {
+    background-color: rgb(246, 0, 119);
+    font-size: 1.2rem;
+    font-family: 'Lobster', sans-serif;
+}
+
+p {
+    color: aliceblue;
+    animation-duration: 3s;
+    animation-name: slidein;
+  }
+  
+  @keyframes slidein {
+    from {
+      margin-right: 100%;
+      /* width: 300%; */
+    }
+  
+    to {
+      margin-right: 0%;
+      width: 100%;
+    }
+  }
+
+  footer {
+    background-color: rgba(0, 0, 0, 0.352);
+    border-top: 2px solid rgba(255, 255, 255, 0.386);
+    border-bottom: 2px solid rgba(255, 255, 255, 0.516);
+  }
+  
