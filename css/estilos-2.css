@@ -8,6 +8,11 @@ body {
 header{
     background-color: rgba(0, 0, 0, 0.383);
 }
+
+.contenido {
+    
+    display: flex;
+}
 section {
  
     background-image: url(../img/pngtree-bottom-console.jpg);
