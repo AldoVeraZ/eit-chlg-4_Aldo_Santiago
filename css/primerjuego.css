@@ -17,6 +17,39 @@ header {
   margin: 25px 0;
   padding: 1rem;
 }
+.container-video {
+  display: flex;
+  flex-direction: column;
+  border: dotted 1px #f53929;
+  padding: 3px 7px;
+  height: 890px;
+}
+
+@media (max-width: 600px) {
+  /*se aplica si el ancho maximo es 580px osea menores a 580px */
+  body {
+    padding: 10px;
+  }
+}
+@media (max-width: 408px) {
+  /*se aplica si el ancho maximo es 580px osea menores a 580px */
+  body {
+    padding: 5px;
+    margin: 0;
+  }
+  .flex {
+    font-size: small;
+    flex-wrap: wrap;
+  }
+  .yoshi-demo iframe {
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+  }
+  .container-video {
+    height: 400px;
+  }
+}
 
 h1 {
   color: beige;
@@ -131,14 +164,6 @@ footer {
   display: flex;
   height: 4rem;
   justify-content: center;
-}
-
-.container-video {
-  display: flex;
-  flex-direction: column;
-  border: dotted 1px #f53929;
-  padding: 3px 7px;
-  height: 890px;
 }
 
 .yoshi {

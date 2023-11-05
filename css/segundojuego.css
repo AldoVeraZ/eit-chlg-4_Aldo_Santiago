@@ -28,6 +28,7 @@ ul {
   display: flex;
   justify-content: space-between;
   align-items: baseline;
+  flex-wrap: wrap;
 }
 
 .fight {
@@ -56,7 +57,7 @@ ul {
 .item {
   width: 320px;
   height: 320px;
-  border: dotted 1px #f53929;
+  /* border: dotted 1px #f53929; */
   text-align: justify;
   padding: 3px 7px;
   padding-bottom: 652px;
@@ -79,6 +80,7 @@ ul {
 
 .container-intro {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .info {
@@ -125,7 +127,7 @@ ul {
   flex-direction: column;
   border: dotted 1px #f53929;
   padding: 3px 7px;
-  height: 890px;
+  /* height: 1300px; */
 }
 
 h4 {
@@ -318,3 +320,100 @@ fieldset {
   color: #ffad00;
   border-bottom: dotted red;
 }
+
+/* @media (max-width: 1060px) { */
+/*se aplica si el ancho maximo es 580px osea menores a 580px */
+/* .img2 { */
+/* justify-content: center; */
+/* align-items: center; */
+/* text-align: center; */
+/* flex-grow: 1;
+    height: 40px;
+  }
+} */
+@media (max-width: 320px) {
+  body {
+    padding: 1px;
+    margin: 0;
+  }
+  .images {
+    width: 100%;
+  }
+  .img1 {
+    padding-bottom: 400px;
+  }
+  .img2 {
+    width: 100%;
+    padding-top: 30rem;
+    padding-bottom: 30rem;
+  }
+
+  .robocop-small iframe {
+    width: 100%;
+    height: 30vh;
+    box-sizing: border-box;
+  }
+}
+@media (max-width: 983px) {
+  body {
+    padding: 1px;
+    margin: 0;
+  }
+  .images {
+    width: 100%;
+  }
+  .img2 {
+    width: 60%;
+    padding-top: 30rem;
+  }
+
+  .robocop-small iframe {
+    width: 100%;
+    height: 30vh;
+    box-sizing: border-box;
+  }
+}
+@media (min-width: 984px) and (max-width: 1060px) {
+  .img2 {
+    /* justify-content: center; */
+    align-items: center;
+    /* text-align: center; */
+    flex-grow: 1;
+    height: 40px;
+  }
+  .robocop-small iframe {
+    height: 50vh;
+    width: 100%;
+    box-sizing: border-box;
+  }
+}
+@media (min-width: 1061px) and (max-width: 1440px) {
+  .robocop-small iframe {
+    width: 100%;
+    height: 60vh;
+    box-sizing: border-box;
+  }
+}
+
+@media (min-width: 1441px) and (max-width: 2560px) {
+  .robocop-small iframe {
+    width: 100%;
+    height: 100vh;
+    box-sizing: border-box;
+  }
+  /* .container-video {
+    height: 1300px;
+  } */
+  .container-segundojuego {
+    padding-bottom: 50px;
+  }
+}
+
+/* @media (max-width: 984px) and (min-width: 921px) { */
+/*se aplica si el ancho maximo es 580px osea menores a 580px */
+/* .img2 { */
+/* justify-content: center; */
+/* text-align: center; */
+/* height: 400px; */
+/* }
+} */
