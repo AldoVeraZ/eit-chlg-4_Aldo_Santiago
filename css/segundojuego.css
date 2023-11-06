@@ -125,7 +125,7 @@ ul {
 .container-video {
   display: flex;
   flex-direction: column;
-  border: dotted 1px #f53929;
+  /* border: dotted 1px; */
   padding: 3px 7px;
   /* height: 1300px; */
 }
